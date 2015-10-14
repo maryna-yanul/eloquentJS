@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+
+var n=8;
+var board = '';
+  for (var i=0; i<=n; i++){
+    for(var y=0; y<n; y++){
+      if ((i+y) % 2 === 0){
+        board+='#';
+      }else{
+        board+=' ';
+      }
+    }
+    board+='\n';
+}
+  console.log(board);
+
+</script>
+</body>
+</html>
