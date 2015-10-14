@@ -8,16 +8,16 @@
 <body>
 <script id="jsbin-javascript">
 var isEven = function(n){
-  if(n%2===0 && n===0 && n>0){
+  n = Math.abs(n);
+  if(n===0){
     return true;
-  }else if(n<0){
-  //isEven = Math.abs(n);
-    return 'try again later';
-  }else{
+  }else if(n===1){
     return false;
+  }else if(n>1){
+    return isEven(n-2);
   }
 };
-console.log(isEven(-2));
+console.log(isEven(1));
 </script>
 </body>
 </html>
